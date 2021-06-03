@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>F@ce Rec</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
-
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/style.css')}}">
+    <!-- in chrome use Ctrl+Shift+R to reload css-->
 </head>
 <body>
     <h1 id="web_header_name">Face Recognition Website</h1>
-    <img src="{{url_for('static',filename='images/souhardya.jpg')}}">
     <br>
-    <a href="{{url_for('video_feed')}}">Turn the camera on</a>
+    <button class="tablink" onclick=" location.href='{{url_for('video_feed')}}'">Turn the camera on</button>
+    <br>
+    <img src="{{url_for('static',filename='images/souhardya.jpg')}}">
+
+    <!--<a href="{{url_for('video_feed')}}">Turn the camera on</a>-->
 </body>
 </html>
