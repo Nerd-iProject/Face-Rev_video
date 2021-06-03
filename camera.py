@@ -49,7 +49,7 @@ class VideoCamera(object):
 
     def get_frame(self):
         image = self.stream.read()
-        detector=cv2.CascadeClassifier('D:/Users/DELL/PythonProjects/haarcascade_frontalface_default.xml')
+        detector=cv2.CascadeClassifier('D:/Users/DELL/PythonProjects/video_face_rec/haarcascade_frontalface_default.xml')
         face=detector.detectMultiScale(image,1.1,7)
         for (x,y,h,w) in face:
             cv2.rectangle(image,(x,y),(x+w,y+h),(0,255,0),2)
