@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='styles/main.css')}}">
+    <title>F@ce Rec</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 
 </head>
 <body>
-    <h1 id="app_name_header">Face Recognition app</h1>
-    <!--<img src="{{url_for('static',filename='images/souhardya.jpg')}}">-->
-    <a href="{{url_for('video_feed')}}">Hello</a>
+    <h1 id="web_header_name">Face Recognition Website</h1>
+    <img src="{{url_for('static',filename='images/souhardya.jpg')}}">
+    <br>
+    <a href="{{url_for('video_feed')}}">Turn the camera on</a>
 </body>
 </html>
